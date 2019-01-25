@@ -1,0 +1,70 @@
+git remote add origin https://github.com/ycw786369470/-.git
+ git push -u origin master
+ 
+ str = "my     name is {name} and age is {year}!"
+str1 = "Abc123AA bb"
+str2 = '''aa
+bb
+cc'''
+str3 = '我爱中国'
+# strs = str.format(name="Alan",year=26)
+strs = input('>>>')
+# table = strs.maketrans('ma', 'nb', 'n')
+print(strs)
+
+# print('\n 一. 查找 & 替换类方法 \n')
+
+# print('字符串strs中 a 出现的次数：', strs.count("a"))
+# print('字符串strs中 a 首次出现的位置：', strs.find('a'))
+# print('字符串strs中从右向左 a 首次出现的位置：', strs.rfind('a'))
+# print('字符串strs中 a 首次出现的位置：', strs.index('a'))
+# print('字符串strs中从右向左 a 首次出现的位置(rindex)：', strs.rindex('a'))
+# print('字符串strs中字符 a 被替换为 z 后生成的新字符串(replace)：', strs.replace('a', 'z'))
+# print('字符串strs中的部分字符被替换后的新字符串(translate)：', strs.translate(table))
+
+print('\n 二. 判断类方法，通常返回True和False \n')
+
+# print('字符串str1中是否以 Ab 开头：', str1.startswith('Ab'))
+# print('字符串str1中是否以 bb 结尾：', str1.endswith('bb'))
+
+#=========================================================
+print('字符串str1是否是由字母和数字组成：', str1.isalnum())
+print('字符串str1是否是由字母组成：', str1.isalpha())
+#=========================================================
+
+print('字符串str1是否是由数字组成，并在十进制整数的范围：', str1.isdecimal())
+print('字符串str1是否是由数字组成，并在整数的范围：', str1.isdigit())
+print('字符串str1是否是由数字组成，并在整数的范围：', str1.isnumeric())
+print('字符串str1是否是全有空格或是制表符组成：', str1.isspace())
+print('字符串str1是否是全是大写字母组成：', str1.isupper())
+print('字符串str1是否是全是小写字母组成：', str1.islower())
+print('字符串str1中单词首字母是否都是大写，并且其余字符都为小写：', str1.istitle())
+print('字符串str1是否是合法的标识符：', str1.isidentifier())
+print('字符串str1是否能够被打印：', str1.isprintable())
+
+
+print('\n 三. 格式化类方法，返回一个格式化的新字符串 \n')
+
+print('将字符串str1中的字符全部转换成小写：', str1.lower())
+print('将字符串str1中的字符全部转换为大写:', str1.upper())
+print('将字符串str1中的字符大小写互换：', str1.swapcase())
+print('将字符串str1首字母大写，其余字母小写：', str1.capitalize())
+print('将字符串str1中的每个单词首字母大写，其余字母小写：', str1.title())
+print('将字符串str1按照指定长度居中显示，并用*号填充：', str1.center(50, '*'))
+print('将字符串str1按照指定长度左对齐显示，并用*号填充：', str1.ljust(50, '*'))
+print('将字符串str1按照指定长度左对齐显示，并用*号填充：', str1.rjust(50, '*'))
+print('将字符串str1中指定字符从两端移除：', str1.strip('Ab C'))
+print('将字符串str1中指定字符从左边移除：', str1.lstrip('Ab C'))
+print('将字符串str1中指定字符从右边移除：', str1.rstrip('Ab C'))
+print('将字符串中的制表符转换为空格：', 'ab\tcd'.expandtabs())
+print('将数字类字符串返回指定长度：', '12345'.zfill(9))
+print('将字符串以UTF-8格式重新编码：', str3.encode('UTF-8', 'strict'))
+
+print('\n 四. 拆分组合类方法 \n')
+
+print('将字符串拆分为一个三个元素的元组：', str1.partition('23'))
+print('将字符串从右边开始拆分为一个三个元素的元组：', str1.rpartition('23'))
+print('将字符串以指定字符串分隔为一个列表：', str1.split('A'))
+print('将字符串从右边以指定字符串分隔为一个列表：', str1.rsplit('A', 2))
+print('以指定字符串作为分隔符将字符串中的每一个字符分隔组合成新字符串：', '中国'.join(str1))
+print('将多行字符串拆分为一个列表：', str2.splitlines())
